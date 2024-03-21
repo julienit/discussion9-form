@@ -1,0 +1,76 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  
+  body {
+    font-family: "Figtree", georgia;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    width:70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    background: #f6f5f5;
+  }
+
+  .radio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background: #575294; */
+    color: hsl(0, 0%, 0%);
+  }
+
+.radio label {
+    display: flex;
+    align-items: center;
+}
+
+  #name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    background: #ffffff;
+    color: #ffffff;
+  }
+
+  #message {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+    align-items: left;
+  }
+
+  input,
+  textarea {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+    border: 1px solid #cecece;
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #4b1668;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #2f2f2f;
+    color: black;
+  }
+
+  input[type="radio"] {
+    grid-column-start: 1;
+  }
